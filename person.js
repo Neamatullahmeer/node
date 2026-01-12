@@ -28,6 +28,14 @@ const personSchema = new mongoose.Schema({
         enum: ['employed', 'unemployed', 'student', 'retired'],
         required: true,
     },
+    username: {
+        type: String,
+        required: true,
+    },
+    password: {
+        type: String,
+        required: true,
+    }
 });
 
 
